@@ -27,7 +27,9 @@ try{
 mongoose.connect(`${process.env.DATABASE}`)}catch(e){
     console.log(e.message)
 }
-
+app.get("/",(req,res)=>{
+  res.json("server running")
+})
 app.post("/user" , async(req,res)=>{
     const {username,password} = req.body;
 
