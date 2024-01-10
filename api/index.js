@@ -24,7 +24,7 @@ app.use(cors({
 }));
 
 try{
-mongoose.connect(`${process.env.DATABASE}`)}catch(e){
+mongoose.connect("mongodb+srv://allwinsamuel0124:BIz0pb2q8Y8Y6Yxg@cluster0.74f6v4w.mongodb.net/?retryWrites=true&w=majority")}catch(e){
     console.log(e.message)
 }
 app.get("/",(req,res)=>{
